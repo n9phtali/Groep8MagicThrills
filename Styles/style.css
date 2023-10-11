@@ -1,0 +1,16 @@
+.oval {
+    height: 50px;
+    width: 100px;
+    background-color: peachpuff;
+    border-radius: 50%;
+    position: absolute;
+    width: 1961px;
+    top: -60%;
+    height: 100%
+}
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+    border-radius: 50%;
+}
