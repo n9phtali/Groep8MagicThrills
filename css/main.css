@@ -1,0 +1,304 @@
+html {
+    height: 100%;
+}
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-attachment: fixed;
+    background-color: gray;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider-nav {
+    position: absolute;
+}
+
+h2{
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Arial Black";
+    font-size: 25px;
+}
+h4 {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Arial Black";
+}
+p {
+    font-weight: bold;
+    font-family: "Arial Black";
+}
+main{
+    text-align: center;
+    font-size: 25px;
+    font-family: bold
+}
+
+
+@media (max-width: 400px) and (min-width: 100px) {
+    .icon-bar {
+        width: 100%; /* Full-width */
+        background-color: #555; /* Dark-grey background */
+        overflow: auto; /* Overflow due to float */
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 5;
+    }
+
+    .icon-bar a {
+        float: left; /* Float links side by side */
+        text-align: center; /* Center-align text */
+        width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+        padding: 12px 0; /* Some top and bottom padding */
+        transition: all 0.3s ease; /* Add transition for hover effects */
+        color: white; /* White text color */
+        font-size: 36px; /* Increased font size */
+    }
+
+    .icon-bar a:hover {
+        background-color: #fc0808; /* Add a hover color */
+    }
+
+    .slider-wrapper {
+        position: relative;
+        max-width: 48rem;
+        margin: 0 auto;
+    }
+
+    .slider {
+        display: flex;
+        aspect-ratio: 16 / 9;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        box-shadow: 0 1.5rem 3rem -0.75rem hsl(0, 0%, 100%);
+        border-radius: 0.5rem;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .slider::-webkit-scrollbar {
+        display: none;
+    }
+
+    .slider img {
+        flex: 1 0 100%;
+        scroll-snap-align: start;
+        object-fit: cover;
+    }
+
+}
+
+@media (max-width: 800px) and (min-width: 401px) {
+
+    .icon-bar {
+        width: 100%; /* Full-width */
+        background-color: #555; /* Dark-grey background */
+        overflow: auto; /* Overflow due to float */
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 5;
+    }
+
+    .icon-bar a {
+        float: left; /* Float links side by side */
+        text-align: center; /* Center-align text */
+        width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+        padding: 12px 0; /* Some top and bottom padding */
+        transition: all 0.3s ease; /* Add transition for hover effects */
+        color: white; /* White text color */
+        font-size: 36px; /* Increased font size */
+    }
+
+    .icon-bar a:hover {
+        background-color: #fc0808; /* Add a hover color */
+    }
+
+    .slider-wrapper {
+        position: relative;
+        max-width: 48rem;
+        margin: 0 auto;
+    }
+
+    .slider {
+        display: flex;
+        aspect-ratio: 16 / 9;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        box-shadow: 0 1.5rem 3rem -0.75rem hsl(0, 0%, 100%);
+        border-radius: 0.5rem;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .slider::-webkit-scrollbar {
+        display: none;
+    }
+
+    .slider img {
+        flex: 1 0 100%;
+        scroll-snap-align: start;
+        object-fit: cover;
+    }
+
+    .slider-nav {
+        display: flex;
+        column-gap: 1rem;
+        bottom: 1.25rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .slider-nav a {
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background-color: #fff;
+        opacity: 0.75;
+        transition: opacity ease 250ms;
+    }
+
+
+    .slider-nav a:hover {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 801px) {
+
+    .icon-bar {
+        width: 100%; /* Full-width */
+        background-color: #555; /* Dark-grey background */
+        overflow: auto; /* Overflow due to float */
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 5;
+    }
+
+    .icon-bar a {
+        float: left; /* Float links side by side */
+        text-align: center; /* Center-align text */
+        width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+        padding: 12px 0; /* Some top and bottom padding */
+        transition: all 0.3s ease; /* Add transition for hover effects */
+        color: white; /* White text color */
+        font-size: 36px; /* Increased font size */
+    }
+
+    .icon-bar a:hover {
+        background-color: #fc0808; /* Add a hover color */
+    }
+
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+        height: 100%;
+        width: 700px;
+        padding: 2rem;
+
+    }
+
+    .slider-wrapper {
+        position: relative;
+        max-width: 48rem;
+        margin: 0 auto;
+    }
+
+    .slider {
+        display: flex;
+        aspect-ratio: 16 / 9;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+        border-radius: 0.5rem;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .slider::-webkit-scrollbar {
+        display: none;
+    }
+
+    .slider img {
+        flex: 1 0 100%;
+        scroll-snap-align: start;
+        object-fit: cover;
+    }
+
+    .slider-nav {
+        display: flex;
+        column-gap: 1rem;
+        bottom: 1.25rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .slider-nav a {
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background-color: #fff;
+        opacity: 0.75;
+        transition: opacity ease 250ms;
+    }
+
+    .slider-nav a:hover {
+        opacity: 1;
+    }
+
+    textarea {
+        width: 50%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid gray;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+        position: absolute;
+        left: 25%;
+
+    }
+
+    hr {
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0;
+        width: 100%;
+
+    }
+
+    div.transbox {
+        margin: 30px;
+        background-color: #ffffff00;
+        opacity: 0.6;
+    }
+
+    div.transbox p {
+        margin: 5%;
+        color: #000000;
+        font-family: "Arial Black";
+        padding-bottom: 65px;
+    }
+
+}
